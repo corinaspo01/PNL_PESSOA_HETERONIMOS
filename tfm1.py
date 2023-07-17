@@ -72,6 +72,7 @@ etiquetas_gramaticales = [tag for _, tag in etiquetas]
 categoria_gramatical_comun = nltk.FreqDist(etiquetas_gramaticales).most_common(5)
 print("Caategoría gramatical común:", categoria_gramatical_comun)
 
+#Análisis de sentimientos
 from nltk.sentiment import SentimentIntensityAnalyzer
 sia = SentimentIntensityAnalyzer()
 sentimientoscampos = sia.polarity_scores(campos)
